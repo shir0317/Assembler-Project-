@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		219100BF2A8A9A7A0018FD3C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 219100BE2A8A9A7A0018FD3C /* main.c */; };
+		219100C72A8A9A8E0018FD3C /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 219100C62A8A9A8E0018FD3C /* lexer.c */; };
+		219100CA2A8A9A980018FD3C /* assembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 219100C92A8A9A980018FD3C /* assembler.c */; };
+		219100CE2A8A9AAF0018FD3C /* trie.c in Sources */ = {isa = PBXBuildFile; fileRef = 219100CD2A8A9AAF0018FD3C /* trie.c */; };
+		219100D12A8A9AB80018FD3C /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 219100D02A8A9AB80018FD3C /* vector.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		219100BB2A8A9A7A0018FD3C /* Assembler Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assembler Project"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219100BE2A8A9A7A0018FD3C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		219100C52A8A9A8E0018FD3C /* lexer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
+		219100C62A8A9A8E0018FD3C /* lexer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lexer.c; sourceTree = "<group>"; };
+		219100C82A8A9A980018FD3C /* assembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = assembler.h; sourceTree = "<group>"; };
+		219100C92A8A9A980018FD3C /* assembler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = assembler.c; sourceTree = "<group>"; };
+		219100CC2A8A9AAF0018FD3C /* trie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
+		219100CD2A8A9AAF0018FD3C /* trie.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = trie.c; sourceTree = "<group>"; };
+		219100CF2A8A9AB80018FD3C /* vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		219100D02A8A9AB80018FD3C /* vector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vector.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,24 @@
 			isa = PBXGroup;
 			children = (
 				219100BE2A8A9A7A0018FD3C /* main.c */,
+				219100C52A8A9A8E0018FD3C /* lexer.h */,
+				219100C62A8A9A8E0018FD3C /* lexer.c */,
+				219100C82A8A9A980018FD3C /* assembler.h */,
+				219100C92A8A9A980018FD3C /* assembler.c */,
+				219100CB2A8A9A9C0018FD3C /* data_structures */,
 			);
 			path = "Assembler Project";
+			sourceTree = "<group>";
+		};
+		219100CB2A8A9A9C0018FD3C /* data_structures */ = {
+			isa = PBXGroup;
+			children = (
+				219100CC2A8A9AAF0018FD3C /* trie.h */,
+				219100CD2A8A9AAF0018FD3C /* trie.c */,
+				219100CF2A8A9AB80018FD3C /* vector.h */,
+				219100D02A8A9AB80018FD3C /* vector.c */,
+			);
+			path = data_structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219100C72A8A9A8E0018FD3C /* lexer.c in Sources */,
+				219100CA2A8A9A980018FD3C /* assembler.c in Sources */,
 				219100BF2A8A9A7A0018FD3C /* main.c in Sources */,
+				219100D12A8A9AB80018FD3C /* vector.c in Sources */,
+				219100CE2A8A9AAF0018FD3C /* trie.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

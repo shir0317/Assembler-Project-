@@ -3,7 +3,7 @@
 #define MAX_NUMBER_DATA 100
 #define MAX_LABEL_LEN 31
 struct ast {
-    char ast_syntax_error[150];
+    char ast_syntax_error[140];
     char label_name[MAX_LABEL_LEN +1];
     enum{
         ast_inst,

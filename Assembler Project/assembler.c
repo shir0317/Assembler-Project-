@@ -10,7 +10,7 @@
 struct symbol {
     enum{
         sym_extern,
-        sym_entry, /*it is declared as entry , but must be defined later in the file*/
+        sym_entry, /*it is declared as entry , but must be defined later in the file.*/
         sym_code,
         sym_data,
         sym_entry_code,

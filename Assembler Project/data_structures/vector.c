@@ -25,7 +25,7 @@ Vector new_vector(void * (*ctor)(const void *copy),void (*dtor)(void *item)) {
     new->dtor = dtor;
     return new;
 }
-
+/*.*/
 void * vector_insert(Vector v,const void * copy_item) {
     size_t it;
     void ** temp;

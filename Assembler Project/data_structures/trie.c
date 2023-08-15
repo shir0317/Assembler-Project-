@@ -22,7 +22,7 @@ static struct trie_node *internal_trie_exists(struct trie_node * node_i,const ch
     }
     return NULL;
 }
-
+/*.*/
 
 Trie trie() {
     return calloc(1,sizeof(struct trie));
