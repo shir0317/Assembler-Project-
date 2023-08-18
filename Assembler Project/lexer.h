@@ -1,6 +1,6 @@
 #ifndef lexer_h
 #define lexer_h
-#define MAX_NUMBER_DATA 100
+#define MAX_NUMBER_DATA 80
 #define MAX_LABEL_LEN 31
 struct ast {
     char ast_syntax_error[140];
@@ -55,6 +55,12 @@ struct ast {
             
             }ast_inst_opt;
         }ast_inst;
+        enum{
+            ast_operand_opt_none = 0,
+            ast_operand_opt_const_number =1,
+            ast_operand_opt_register_number=5,
+            ast_operand_opt_label=3
+        }ast_inst_operand_opt[2];
         union {
             int const_number;
             int register_number;
